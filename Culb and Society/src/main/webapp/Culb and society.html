@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Cards Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: rgb(27, 27, 27);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 270px;
+            margin: 10px;
+            border-radius: 15px;
+            overflow: hidden; 
+        }
+
+        .card-image {
+            height: 250px;
+            margin-bottom: 15px;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+      
+        .leo {
+            background-image: url("leo.png");
+        }
+
+        .rotaract {
+            background-image: url("rotaract.png");
+        }
+
+        .gaming {
+            background-image: url("gaming.png");
+        }
+
+        .card h2,
+        .card p {
+            padding: 10px; 
+        }
+
+        .card a {
+            background-color: black;
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-align: center;
+            margin-top: 20px; 
+            margin-bottom: 20px; 
+            text-decoration: none;
+        }
+
+        
+        .card:hover {
+            background-color: rgb(62, 62, 62);
+            color: white;
+            cursor: pointer;
+            transform: scale(1.03);
+            transition: all ease-in-out 0.3s; 
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="card">
+            <div class="card-image leo"></div>
+            <h2>Leo Club</h2>
+            <p>Where there’s a need, there’s a Leo
+
+                “Leadership, Experience, Opportunity.” That’s what makes a Leo. Members of Leo clubs embody the best qualities of our incredible organization. They are devoted young people who realize the power of action. Together, Leos and Lions form a powerful partnership — one of mutual respect where Lions learn from the innovative insights of Leos, and where Leos gain access to the proven strategies of those who’ve successfully served the world for decades.
+
+                Leos get things done</p>
+            <a href="#">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image rotaract"></div>
+            <h2>Rotaract Club</h2>
+            <p>Rotaract clubs bring together people ages 18 and older to exchange ideas with leaders in the community, develop leadership and professional skills, and have fun through service.
+                In communities worldwide, Rotary and Rotaract members work side by side to take action through service. From big cities to rural villages, Rotaract is changing communities like yours.
+
+
+            </p>
+            <br><br><br><br><br>
+            <a href="#">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image gaming"></div>
+            <h2>Mora Esport</h2>
+            <p>
+                <br>VISION :
+                Help build a better Sri Lanka by growing a community of gamers, providing them space and tools to leverage video games to their advantage and foster personal growth.<br>
+                <br>MISSION:
+                To achieve in Esports what Sri Lanka Cricket accomplished in the ’96 World Cup, propelling the growth of an entire Esports industry in Sri Lanka and nurturing a vibrant community of local gamers</p>
+                <br><br>
+            <a href="#">READ MORE</a>
+        </div>
+    </section>
+</body>
+
+</html>
